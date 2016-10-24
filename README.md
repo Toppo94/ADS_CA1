@@ -23,23 +23,3 @@ are dependent on your understanding for the code you submit (assessed by
 interview). 
  B.Sc. in Computing ADS1 Practical 1 18% 17 November 2016
 Page 2 of 2
-
-Some Suggestions
-First of all get your program working for a single file, and then after you have tested
-it, process all the files in the directory. You may need dirent.h or windows.h
-to work with directories. If you wish to use the dirent.h header file in Visual
-Studio you will have to add it in to the include path in the project properties. (see
-VC++ Directories Property Page). See the links on Moodle for directory processing
-and file access. This link might also help you
-http://www.fredosaurus.com/notes-cpp/io/readtextfile.html
-Process each file in the directory and calculate a similarity index for it (the index
-could be a struct something like the following
-typedef struct
-{
- int iterativecount;
- int selectioncount;
-} SimilarityIndex_t;
-You could then make an array of similarity indexes (see example below). If you
-then sort this array you will have alike indexes beside each other.
-const size_t file_n = 4;
-SimilarityIndex_t arrayOfFileIndexes[file_n]; 
